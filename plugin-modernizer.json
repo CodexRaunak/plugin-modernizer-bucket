@@ -1,0 +1,20 @@
+{
+    "version": "1025.v6051110469dc",
+    "description": "A CLI tool designed to automate the modernization of Jenkins plugins",
+    "homepage": "https://github.com/jenkins-infra/plugin-modernizer-tool",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jenkins-infra/plugin-modernizer-tool/releases/download/1025.v6051110469dc/jenkins-plugin-modernizer-1025.v6051110469dc.jar",
+            "hash": "sha256:2239aa679580bc8ad6f8ccd63891a63efce108ceefa9917b0a6d9e88761a1cd0"
+        }
+    },
+    "bin": "jenkins-plugin-modernizer-1025.v6051110469dc.jar",
+    "checkver": {
+        "url": "https://github.com/jenkins-infra/plugin-modernizer-tool/releases",
+        "regex": "jenkins-plugin-modernizer-(?<version>[\\d.v]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/jenkins-infra/plugin-modernizer-tool/releases/download/$version/jenkins-plugin-modernizer-$version.jar"
+    }
+}
